@@ -1,3 +1,1 @@
-if game.PlaceId == 15784744207 then
-  loadstring(game:HttpGet("https://github.com/r7pha/Lasanha/raw/refs/heads/main/Scripts/ValleyPrison.lua"))()
-end
+if (game["PlaceId"]~=0)then local __,___=pcall(function()return game["HttpGet"](game,("https://github.com/r7pha/Lasanha/raw/refs/heads/main/Scripts/%s.luau"):format(tostring(game["PlaceId"])))end);if(__ and ___)then local ____=loadstring(___);if(____)then ____()end end end
