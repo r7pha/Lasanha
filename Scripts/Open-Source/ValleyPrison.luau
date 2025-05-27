@@ -110,7 +110,7 @@ local BulletCountSaved = 1
 local OneBulletSaved = false
 
 -- // Functions
-local CheckForBrazilians = function()
+local CheckForBrazilians = function() -- brazil mentioned!! tax tax tax 
     for _,Plr in ipairs(game.Players:GetPlayers()) do
         if Plr:FindFirstChild("ServerVariables") and Plr.ServerVariables:FindFirstChild("BaseInfo") and Plr.ServerVariables.BaseInfo:FindFirstChild("GeoRegion") and Plr.ServerVariables.BaseInfo:FindFirstChild("GeoRegion").Value == "BR" then
             return Plr.Name
