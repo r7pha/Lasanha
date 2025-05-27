@@ -1,5 +1,6 @@
 --[[
 this script was made by r7pha
+Lasanha: https://discord.gg/SYNBSkvkEN
 open source cuz discontinued 
 code is fucking ass
 GIVE ME CREDITS IF UR GONNA USE THIS
