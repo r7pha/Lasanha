@@ -1,4 +1,4 @@
-local Release = "Cum Version 6.9"
+local Release = "Prerelease Beta 6.1"
 
 local Luna = { 
 	Folder = "Luna", 
@@ -1533,7 +1533,6 @@ local function GetIcon(icon, source)
 	if source == "Custom" then
 		return "rbxassetid://" .. icon
 	elseif source == "Lucide" then
-		-- full credit to latte softworks :)
 		local iconData = not isStudio and game:HttpGet("https://raw.githubusercontent.com/latte-soft/lucide-roblox/refs/heads/master/lib/Icons.luau")
 		local icons = isStudio and IconModule.Lucide or loadstring(iconData)()
 		if not isStudio then
@@ -1561,7 +1560,7 @@ local function GetIcon(icon, source)
 				imageRectOffset = iro,
 			}
 
-			return asset
+			return asset.id
 		else
 			return "rbxassetid://10723434557"
 		end
@@ -2073,7 +2072,7 @@ function Luna:Notification(data) -- action e.g open messages
 		newNotification.Parent = Notifications
 		newNotification.LayoutOrder = #Notifications:GetChildren()
 		newNotification.Visible = false
-		BlurModule(newNotification)
+		--BlurModule(newNotification)
 
 		-- Set Data
 		newNotification.Title.Text = data.Title
