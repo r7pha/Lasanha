@@ -1,3 +1,6 @@
+-- [ By r7pha ]
+-- [ Nigga ]
+
 local repo = 'https://raw.githubusercontent.com/mstudio45/LinoriaLib/main/'
 
 local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
